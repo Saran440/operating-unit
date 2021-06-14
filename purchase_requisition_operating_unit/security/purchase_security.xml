@@ -15,8 +15,8 @@
             />
             <field
                 name="domain_force"
-            >['|',('operating_unit_id','=',False),('operating_unit_id','in',[g.id for g in user.operating_unit_ids])]</field>
-            <field name="name">PR's from allowed operating units</field>
+            >['|',('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]</field>
+            <field name="name">TE's from allowed operating units</field>
             <field name="global" eval="True" />
             <field eval="0" name="perm_unlink" />
             <field eval="0" name="perm_write" />
@@ -34,8 +34,8 @@
             />
             <field
                 name="domain_force"
-            >['|',('operating_unit_id','=',False),('operating_unit_id','in',[g.id for g in user.operating_unit_ids])]</field>
-            <field name="name">PR lines from allowed operating units</field>
+            >['|',('operating_unit_id','=',False),('operating_unit_id','in', user.operating_unit_ids.ids)]</field>
+            <field name="name">TE lines from allowed operating units</field>
             <field name="global" eval="True" />
             <field eval="0" name="perm_unlink" />
             <field eval="0" name="perm_write" />
